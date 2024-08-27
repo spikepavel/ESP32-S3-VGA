@@ -22,7 +22,6 @@ The ESP32Lib can be found in the Library Manager(Sketch -> Include Library -> Ma
 ```
 #include <VGA.h>
 ```
-<br />
 ## Pin configuration
 An VGA cable can be used to connect to the ESP32-S3.\
 \
