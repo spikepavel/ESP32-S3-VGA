@@ -43,10 +43,9 @@ const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2); // R 
 void setup() {
 	const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2);
 
-	Mode mode = Mode::MODE_400x300x60;  //4:3 ratio
-	
-	//Double buffering is enabled using
-	//vga.setFrameBufferCount(2);
+	Mode mode = Mode::MODE_400x300x60;  // 4:3 ratio
+
+	//vga.setFrameBufferCount(2); // Double buffering is enabled using
 
 	//if(!vga.init(pins, mode, 16, 1)) while(1) delay(1);
 	if(!vga.init(pins, mode, 16, 2)) while(1) delay(1);
