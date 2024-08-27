@@ -5,13 +5,6 @@ Check out https://youtube.com/@BASICOS-COMPUTER and https://basicos.ru for proje
 \
 If you found it useful please consider supporting my work on https://donationalerts.com/r/basicos
 <br />
-## Gratitude
-NKros\
-stimmer\
-FabGL\
-bitluni\
-starling13
-<br />
 ## Installation
 This library only supports the ESP32-S3.\
 \
@@ -54,3 +47,9 @@ void setup() {
 	vga.start();
 }
 ```
+## Gratitude
+NKros\
+stimmer\
+FabGL\
+bitluni\
+starling13
