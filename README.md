@@ -31,13 +31,14 @@ The connector pins can be found here: https://en.wikipedia.org/wiki/VGA_connecto
 You can reassign any pins yourself, but keep in mind that some ESP32-S3 pins may already be occupied by something else.\
 <br />
 ![8Bit color setup]\
-<br />
-const PinConfig pins(-1,-1,6,7,8,  -1,-1,-1,12,13,14,  -1,-1,-1,18,21,  1,2); // R G B h v\
+```
+const PinConfig pins(-1,-1,6,7,8,  -1,-1,-1,12,13,14,  -1,-1,-1,18,21,  1,2); // R G B h v
+```
 <br />
 ![16Bit color setup]\
-<br />
+```
 const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2); // R G B h v
-<br />
+```
 ## Usage
 void setup()
 {
