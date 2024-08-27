@@ -12,44 +12,33 @@ FabGL\
 bitluni\
 starling13
 <br />
-## License
-spikepavel 2024
-It is forbidden to use this graphics engine for commercial purposes.
-If you still need commercial use, please do not hesitate to contact me.
-
-
-
 ## Installation
-
-This library only supports the ESP32-S3.
-
-To use the Arduino IDE, you must have ESP32-S3 support pre-installed.
-
-The ESP32Lib can be found in the Library Manager (Sketch -> Include Library -> Manage Libaries).
-
+This library only supports the ESP32-S3.\
+\
+To use in the Arduino IDE, you must have ESP32-S3 support pre-installed.\
+\
+The ESP32Lib can be found in the Library Manager(Sketch -> Include Library -> Manage Libaries).\
+<br />
 ```
 #include <VGA.h>
 ```
-
-
+<br />
 ## Pin configuration
-
-An VGA cable can be used to connect to the ESP32-S3.
+An VGA cable can be used to connect to the ESP32-S3.\
+\
 The connector pins can be found here: https://en.wikipedia.org/wiki/VGA_connector
-You can reassign any pins yourself, but keep in mind that some ESP32-S3 pins may already be occupied by something else.
-
-![8Bit color setup]
-
-const PinConfig pins(-1,-1,6,7,8,  -1,-1,-1,12,13,14,  -1,-1,-1,18,21,  1,2); // R G B h v
-
-![16Bit color setup]
-
+<br />
+You can reassign any pins yourself, but keep in mind that some ESP32-S3 pins may already be occupied by something else.\
+<br />
+![8Bit color setup]\
+<br />
+const PinConfig pins(-1,-1,6,7,8,  -1,-1,-1,12,13,14,  -1,-1,-1,18,21,  1,2); // R G B h v\
+<br />
+![16Bit color setup]\
+<br />
 const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2); // R G B h v
-
-
-
+<br />
 ## Usage
-
 void setup()
 {
 const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2);
