@@ -17,7 +17,7 @@ This library only supports the ESP32-S3.\
 \
 To use in the Arduino IDE, you must have ESP32-S3 support pre-installed.\
 \
-The ESP32Lib can be found in the Library Manager(Sketch -> Include Library -> Manage Libaries).\
+The ESP32-S3 library can be found in the Library Manager(Sketch -> Include Library -> Manage Libaries).\
 <br />
 ```
 #include <VGA.h>
