@@ -25,7 +25,8 @@ The ESP32-S3 library can be found in the Library Manager(Sketch -> Include Libra
 ## Pin configuration
 An VGA cable can be used to connect to the ESP32-S3.\
 \
-The connector pins can be found here: https://en.wikipedia.org/wiki/VGA_connector\
+The connector pins can be found here: https://en.wikipedia.org/wiki/VGA_connector
+<br />
 <br />
 You can reassign any pins yourself, but keep in mind that some ESP32-S3 pins may already be occupied by something else.\
 <br />
