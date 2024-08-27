@@ -1,21 +1,15 @@
 # spikepavel's ESP32-S3 VGA library
-High-performance VGA graphics engine for ESP32-S3.
-
-Check out https://youtube.com/@BASICOS-COMPUTER for project updates
-
-If you found it useful please consider supporting my work on
-
-
-
+High-performance VGA graphics engine for ESP32-S3.\
+Check out https://youtube.com/@BASICOS-COMPUTER and https://basicos.ru for project updates.\
+If you found it useful please consider supporting my work on https://donationalerts.com/r/basicos
+<br />
 ## Gratitude
-NKros
-stimmer
-FabGL
-bitluni
+NKros\
+stimmer\
+FabGL\
+bitluni\
 starling13
-
-
-
+<br />
 ## License
 spikepavel 2024
 It is forbidden to use this graphics engine for commercial purposes.
