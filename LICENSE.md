@@ -1,4 +1,4 @@
-Copyright (C) spikepavel
+# Copyright (C) spikepavel
 \
 \
 \
