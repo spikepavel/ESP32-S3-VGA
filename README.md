@@ -1,5 +1,5 @@
 # spikepavel's ESP32-S3 VGA library
-High-performance VGA graphics engine for ESP32-S3.\
+High-performance VGA graphics library for ESP32-S3.\
 \
 Check out https://youtube.com/@BASICOS-COMPUTER and https://basicos.ru for project updates.\
 \
@@ -30,27 +30,28 @@ The connector pins can be found here: https://en.wikipedia.org/wiki/VGA_connecto
 <br />
 You can reassign any pins yourself, but keep in mind that some ESP32-S3 pins may already be occupied by something else.\
 <br />
-**8Bit color setup**
+**8 bit color setup**
 ```
 const PinConfig pins(-1,-1,6,7,8,  -1,-1,-1,12,13,14,  -1,-1,-1,18,21,  1,2); // R G B h v
 ```
-**16Bit color setup**
+**16 bit color setup**
 ```
 const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2); // R G B h v
 ```
 ## Usage
-void setup()
-{
-const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2);
+```
+void setup() {
+	const PinConfig pins(4,5,6,7,8,  9,10,11,12,13,14,  15,16,17,18,21,  1,2);
 
-Mode mode = Mode::MODE_400x300x60;  //4-3 соотношение
+	Mode mode = Mode::MODE_400x300x60;  //4:3 ratio
 	
-**Double buffering** is enabled using
-//vga.setFrameBufferCount(2);
+	//Double buffering is enabled using
+	//vga.setFrameBufferCount(2);
 
-//if(!vga.init(pins, mode, 16, 1)) while(1) delay(1);
-  if(!vga.init(pins, mode, 16, 2)) while(1) delay(1);
-//if(!vga.init(pins, mode, 8, 3))  while(1) delay(1);
+	//if(!vga.init(pins, mode, 16, 1)) while(1) delay(1);
+	if(!vga.init(pins, mode, 16, 2)) while(1) delay(1);
+	//if(!vga.init(pins, mode, 8, 3))  while(1) delay(1);
 
-vga.start();
+	vga.start();
 }
+```
